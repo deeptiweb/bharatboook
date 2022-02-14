@@ -39,12 +39,12 @@ img{
     display: none;/*does not display bydefault coz we want it only for smaler screen */
     flex-direction: column;/* here all span line up on top of each other */
     justify-content: space-between;/* for dislay space between san line up on top of each other*/
-    width: 37px;
-    height: 23px;
+    width: 53px;
+    height: 30px;
 }
 /* to display 3 bars */
 .bar{
-    height: 5px;
+    height: 6px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
