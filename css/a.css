@@ -39,12 +39,12 @@ img{
     display: none;/*does not display bydefault coz we want it only for smaler screen */
     flex-direction: column;/* here all span line up on top of each other */
     justify-content: space-between;/* for dislay space between san line up on top of each other*/
-    width: 30px;
-    height: 21px;
+    width: 37px;
+    height: 23px;
 }
 /* to display 3 bars */
 .bar{
-    height: 3px;
+    height: 5px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -120,7 +120,7 @@ i{
     text-align: center;
     background-color: #fff;
     padding-bottom: 40px;
-    padding-top: 70px;
+    padding-top: 130px;
     /* animation to move text  */
     animation: abc 10s infinite;
 }
