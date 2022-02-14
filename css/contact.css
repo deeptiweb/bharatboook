@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+}
+body{
+    min-height: 100vh;
+    /* in css use 2 dots and / to go back from css folder and then search img folder */
+    background: url('../img/background.jpg') no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+/* otline for contact-info and contact-form */
+.contact-sec{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.contact-info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    height: 50px;
+    width: calc(50% - 10px);
+    /* or use width:300px; */
+}
+textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+}
+.send-btn{
+    float: right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* when hover effect shows after 0.3 second */
+    transition: 0.3s;
+}
+.send-btn:hover{
+    background: #0582E3;
+}
+/* for home button */
+.btn{
+    background: #2E94E3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 30px;
+    margin-right: -13px;
+}
+
+.btn:hover{
+    background: #0582E3;
+}
+/* .alert{
+    display: none;
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66A;
+    border-radius: 4px;
+} */
+@media screen and (max-width:930px){
+    .contact-sec{
+        flex-direction: column;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }    
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .text-box{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

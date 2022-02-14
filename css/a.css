@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    overflow-x: hidden;
+    line-height: 1.5;
+    font-family:Georgisa, 'Times New Roman', Times, serif; 
+}
+img{
+    border-radius: 5px;
+}
+/* header 1st */
+.navbar{
+    display: flex;
+    background-color:rgb(207, 171, 171);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed; /* to attach the navbar to top */
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+ .logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+    padding: 0 25px;
+    border-radius: 50%;
+}
+
+/* hamurger menu */
+.toggle-button{
+    position: absolute;/* to force it to shift on right side of screen without messing with the flow of the rest of elements */
+    top: 1rem;/* */
+    right: 1rem;
+    display: none;/*does not display bydefault coz we want it only for smaler screen */
+    flex-direction: column;/* here all span line up on top of each other */
+    justify-content: space-between;/* for dislay space between san line up on top of each other*/
+    width: 30px;
+    height: 21px;
+}
+/* to display 3 bars */
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+.navbar-links ul{
+    height: 58px;
+    /* to easily align items inside it  */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} 
+.navbar-links li{
+    list-style: none;
+    padding: 0 15px;
+}
+.navbar-links ul li a{
+    color: rgb(77, 5, 5);
+    text-decoration: none;
+    font-size: 24px;
+    /* for responsiveness */
+    display: block; /* to show them in large size */
+} 
+.navbar-links li a:hover{
+    color:firebrick;   
+    font-size: 23px;
+}
+/* submenu */
+
+i{
+    padding-right: 3px;
+}
+/* for the fixed top bottom arrow */
+.arrow{
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 6px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.8;
+    position: fixed;
+}
+.to-bottom{
+    top: 50vh;
+    left: 10px;
+}
+.to-top{    
+    top: 50vh;
+    left: 95vw;
+}
+.head{
+    padding: 8px 16px;
+    display: table;
+}
+
+/* header 2nd */
+.header2{
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    /* animation to move text  */
+    animation: abc 10s infinite;
+}
+@keyframes abc{
+    0%{margin-left: 100px}
+    10%{margin-left: 50px}
+    20%{margin-right: 100px}
+    30%{margin-right: 50px}
+    40%{margin-left: 100px}
+    50%{margin-left: 50px}
+    60%{margin-right: 100px}
+    70%{margin-right: 50px}
+    80%{margin-left: 100px}
+    90%{margin-left: 50px}
+    100%{margin-right: 100px}
+}
+.xxxlarge{
+    font-size: 40px;
+}
+.w3-tag{
+    background-color:black;
+    color: white;
+    padding: 0 8px;
+}
+/* header 3rd */
+.header3{
+    position: relative;/* to place another absolute content on it */
+    letter-spacing: 4px;
+}
+.w3-image{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.imtxt-onimage{
+    position:absolute; /* to place it on relative header3 */
+    padding: 12px 24px;
+    top: 30%;
+    left: 0;
+}
+.txt1{
+    color: white;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+}
+.txt2{
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.txt3{
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.txtbtn{
+    color:black;
+    background-color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.40;
+}
+.txtbtn:hover{
+    opacity: 0.70;
+}
+/* main section */
+.main{
+
+    padding: 8px 16px;
+    display: table;
+    background-color: rgb(218, 214, 214);
+} 
+.w3-col1{
+    float: left;
+}
+/* media query to part left side 66.66%  of 100%*/
+@media (min-width: 993px){
+.w3-col1{
+    width: 66.66666%;
+}
+}
+/* entry blocks left side */
+ .w3-contain{
+    color: black;
+    background-color: #fff;
+    padding: 12px 24px;
+    margin: 16px;
+}
+
+.w3-center{
+    text-align: center;
+}
+.txt4{
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 40px;
+}
+.txt5{
+    font-weight: 100;
+    margin: 5px 0;
+    font-size: 16px;
+}
+.w3-opacity{
+opacity: 0.60;
+}
+/* for read more in 3 books */
+/* book description is in span with more1 id */
+#more1{
+    display: none;
+}
+/* para with read1 id which contain read less text */
+#read1{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#more2{
+    display: none;
+}
+#read2{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#more3{
+    display: none;
+}
+#read3{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* about info  */
+.w3-col2{
+    float: left;
+}
+/* media query to part right side in remaining 33.33%  of 100%*/
+@media (min-width: 993px){
+.w3-col2{
+    width: 33.33333%;
+}
+}
+/* entry blocks right side */
+.w3-card{
+    color: #000;
+    background-color: #fff;
+    margin: 16px;
+}
+.card1{
+    padding: 3px 10px;
+}
+/* book authors card 1 */
+.w3-card1{
+    color: #000;
+    background-color: #fff;
+    margin: 16px;
+}
+.w3-card1head{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    font-size: 20px;
+}
+.w3-ul{
+    list-style-type: none;
+}
+.w3-ul li{
+    border-bottom: 1px solid #ddd;
+    padding: 20px 16px;
+}
+.w3-ul li:hover{
+    background-color:grey;
+}
+/* to get lines below each other in upcoming books section */
+.up-book-des{
+    display: flex;
+}
+.w3-ullist{
+    padding: 16px 0;
+}
+img{
+    vertical-align: middle;
+}
+.imgcls{
+    float: left;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+.w3-large{
+    font-size: 18px;
+}
+/* fav books card2 */
+.w3-card2{
+    background-color: #fff;
+    margin: 16px;
+}
+.w3-card2head{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+}
+.w3card2container{
+    padding: 8px;
+    background-color: #fff;
+    overflow: auto;/* to hide image if it goes out of block */
+}
+.w3-card2col{
+    width: 45.99999%; /* to part card2 in 2 sec */
+    float: left;
+    padding-right: 10px;
+}
+.imgpadding{
+    padding-bottom: 8px;
+}
+/* subscribe */
+.sub{
+    color: #000;
+    background-color: #fff;
+    margin: 16px;
+}
+.subhead{
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+}
+.w3-subcontainer{
+    padding: 16px;
+}
+.w3-input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 8px;
+    font: inherit;
+}
+.w3-subbutton{
+    color: #fff;
+    background-color: #f44336;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+#subscribe{
+    display: block;
+    overflow: hidden;
+}
+.w3-subbutton:hover{
+    background-color: grey;
+}
+#errormsg,#errormsg1{
+    text-align: left;
+    color: red;
+    margin: 0;
+}
+/* to display popup form */
+.form-popup{
+    display: none; 
+    position: fixed;
+    bottom: 200px;
+    right: 400px;
+    border: 2px solid red;
+    z-index: 2;
+    background-color: honeydew;
+}
+/* footer */
+.w3-foot{
+    color: #fff;
+    background-color:darkgray;
+    padding: 32px;
+}
+.w3-foot p{
+    color: firebrick;
+    font-size: 17px;
+    font-weight: bold;
+}
+.w3-button{
+    color: #fff;
+    background-color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    /* inline block use to add margin to w3-button */
+    display: inline-block;
+    margin-bottom: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}

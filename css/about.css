@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+h1{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 3px;
+}
+strong{
+    color: brown;
+}
+img{
+    width: 540px;
+    height: 400px;
+    border-radius: 10px;
+    padding-top: 6px;
+}
+.head{
+    display: inline-block;
+    width: 100%;
+    background: black;  
+}
+.title{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    color: rosybrown;
+}
+ .logo{
+    display: flex;
+    align-items: center;
+    float: left;
+} 
+.logo img{
+    height: 60px;
+    width: 118px;
+    padding: 0 25px;
+    border-radius: 50%;
+}
+/* social media icons */
+.social{
+    margin-top: 17px;
+    float: right;
+}
+.social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0 10px;
+}
+.social i:hover{
+    color: #3d3d3d;
+}
+/* hamburer menu */
+.toggle-button{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* for sticky menu */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* menu */
+ul{
+    background: rgb(207, 171, 171);;
+    padding: 13px;
+    display: flex;
+    border-radius: 17px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(77, 5, 5);
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color:firebrick;  
+    font-size: 16px; 
+}
+
+.main{
+    padding: 60px 16px 8px 16px;
+    border: 1px solid gray;
+    display: table;
+    background-color: rgb(218, 214, 214);
+} 
+.w3-col1{
+    float: left;
+}
+/* media query to part screen in 2 section */
+@media (min-width: 993px){
+.w3-col1{
+    width: 50%;
+}
+}
+.w3-contain{
+    color: black;
+    background-color: #fff;
+    padding: 12px 24px;
+    margin: 16px;
+} 
+/* for right side */
+.w3-col2{
+    float: left;
+}
+@media (min-width: 993px){
+.w3-col2{
+    width: 50%;
+}
+}
+.audio{
+    display: flex;
+}
+
+.w3-foot{
+    color: #fff;
+    background-color:darkgray;
+    padding: 32px;
+}
+.w3-foot p{
+    color: firebrick;
+    font-size: 17px;
+    font-weight: bold;
+}
+.w3-button{
+    color: #fff;
+    background-color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    /* inline block use to add margin to w3-button */
+    display: inline-block;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+/* for respnsiiveness */
+/* for hamburger menu */
+@media screen and (max-width:1024px){
+    .toggle-button{
+        display: flex;
+        right: 50px;
+    } 
+     nav ul{
+        display: none;  
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+        padding-top: 6px;
+    }
+    nav ul li ol{
+        width: 100%;
+    }
+    ul li:hover > ol{
+        display: block;
+        position: absolute;
+        background: rgb(207, 171, 171);
+        padding: 8px;
+    }
+    ul.active{
+        display: flex;
+        height: 265px;
+    } 
+}
+/* for head main and nav */
+@media screen and (max-width:818px){
+    .w3-foot{
+        width: 840px;
+    }
+    .head{
+        width: 840px;
+    }
+    nav{
+        width: 840px;
+    }
+    .toggle-button{
+        left: 800px;
+    }
+}
+@media screen and (max-width:840px){
+    .main{
+        width: 840px;
+    }
+}
+/* to get image and video center  */
+@media screen and (max-width:990px){
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    video{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:1264px){
+    img{
+        width: 400px;
+    }
+    video{
+        width: 400px;
+    }
+}

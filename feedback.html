@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body> 
+    <div class="container">
+        <div class="post">
+            <div class="text">Thanks for rating us!</div>
+            <div class="edit">EDIT</div>
+        </div>
+        <div class="star-widget">
+
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+
+            <form action="">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experiance..."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <h1>
+        <a href="index.html" class="homebtn">Home</a>
+    </h1>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editbtn = document.querySelector(".edit");
+        //when click on post btn in star-widget
+        btn.onclick = () => {      //arrow fnction is used here
+            widget.style.display = "none"; //hide star-widget block
+            post.style.display = "block";  //and dislay post div
+           //when click on edit btn in post div 
+            editbtn.onclick = () => {
+                widget.style.display = "block"; //dislay star-widget block
+                post.style.display = "none"; //and hide post div
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

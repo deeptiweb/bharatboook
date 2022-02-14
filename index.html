@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/indexResonsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+    <!-- nav is 1st header -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!-- hamburger menu -->
+        <a href="#" class="toggle-button">
+            <!-- 3 span to represent 3 lines -->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- navbar-links -->
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#mybooks"><i class="fas fa-book-open"></i>My Books</a>
+                </li>
+                <li><a href="#upcoming"><i class="fad fa-books"></i>Upcoming Books</a>
+                </li>
+                <li><a href="#authors"><i class="fas fa-heart"></i>My Favorite</a>
+                </li>
+                <li><a href="about.html"><i class="fas fa-address-card"></i>About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i>Contact Us</a></li>
+                <li><a href="feedback.html"><i class="fas fa-comments"></i>feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- w3-content defines a container,wrapped around the whole page content,except footer-->
+    <div class="w3-content" style="max-width: 1600px;"> 
+        <!-- for bottom arrow -->
+        <h3>
+            <a href="#foot" class="arrow to-bottom fas fa-arrow-down"> </a>
+        </h3>
+        <div class="head">
+            <!-- 2nd header  -->
+            <header class="header2">
+                <h1 class="xxxlarge"><b>BHARAT BOOKLIFE</b></h1>
+                <h4>Welcome to the books of <span class="w3-tag">Bharat Mane</span></h4>
+            </header>
+            <!-- Image 3r header-->
+            <header class="header3">
+                <img class="w3-image" src="img/headerImg.jpg" alt="Book" width="1350" height="950">
+                <!-- text on Image -->
+                <div class="imtxt-onimage">
+                    <h1 class="txt1">Bharat's</h1>
+                    <h1 class="txt2"><b>BOOK LIFE</b></h1>
+                    <h6 class="txt3"><button class="txtbtn" onclick="openform()">SUBSCRIBE</button></h6>
+                </div>
+            </header>
+        </div>
+        <!--everthing dislay in table -->
+        <div class="main">
+            <!-- Book entries i.e left side-->
+            <div class="w3-col1">
+                <!-- 1st Book entry -->
+                <div class="w3-contain" id="mybooks">
+                    <div class="w3-center">
+                        <h3 class="txt4">Bhartayan</h3>
+                        <h5 class="txt5">autobiograhy,<span class="w3-opacity">&nbsp; Feb 28, 2015</span></h5>
+                        <h6 class="txt5 w3-opacity">WorldSmith Publication</h6>
+                        <h6 class="txt5 w3-opacity">page-count:558, ISBN no:938479102-4</h6>
+                    </div>
+                    <div class="w3-justify">
+                        <img src="img/Bhartayan.jpg" alt="bhartayan" style="width:100%" class="w3-padding-16">
+                        <p>
+                            <strong>Short description:</strong> <br>
+                            This is my autobiography.I am a simple poor person born in small town barber's
+                            house,living
+                            in Pandharur.I have no identity, i haven't recieved any awards, i haven't studied much.
+                            But
+                            a lot of troubles came in my life which has been described in this book. One more thing,
+                            all
+                            these incidents are true. There is no pretence, and i didn't hide anything.
+                            <span id="dots1">...</span> <span id="more1"> I am as i have
+                                told. My mother has suffered more than me, that's why this book narrates the story
+                                of my
+                                mother from her birth til her death. Under which everthing about my life comes to
+                                the
+                                fore.Now i am living a happy life.This is result of my karma, by reading this book
+                                you will
+                                see happiness even in sarrow, that is my claim..</span>
+                        </p>
+                        <p id="read1" onclick="read1()">Read more</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- second book -->
+                <div class="w3-contain" id="chakwa">
+                    <div class="w3-center">
+                        <h3 class="txt4">Chakwa</h3>
+                        <h5 class="txt5">Katha Sangrah, <span class="w3-opacity">May 2, 2017</span></h5>
+                        <h6 class="txt5 w3-opacity">WorldSmith Publication</h6>
+                        <h6 class="txt5 w3-opacity">page-count:115, ISBN no:938629456-7</h6>
+                    </div>
+                    <div class="w3-justify">
+                        <img src="img/chakawa.jpg" alt="Chakwa" style="width:100%" class="w3-padding-16">
+                        <p>
+                            <strong>Short description:</strong> <br>
+                            Bhartayankar Bharat Mane this is first book of his collection of 17 stories,but before
+                            this
+                            autobiography has been published. The depiction of many incident person is included in
+                            it.
+                            Love of life,way of living,ritualistic and love of animals towards human have also been
+                            shown.<span id="dots2">...</span> <span id="more2">
+                                In what condition rural people live,how much struggle they have to do to live life.
+                                Still in the same situation how they find happiness in sarrow,you will understand
+                                it. Its title 'Chakwa' means to be forgotten in unknown path,wandering off the path
+                                etc.</span>
+                        </p>
+                        <p id="read2" onclick="read2()">Read more</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Third book -->
+                <div class="w3-contain" id="giran">
+                    <div class="w3-center">
+                        <h3 class="txt4">Giran</h3>
+                        <h5 class="txt5">A rural life story, <span class="w3-opacity">Dec 15, 2018 </span></h5>
+                        <h6 class="txt5 w3-opacity">WorldSmith Publication</h6>
+                        <h6 class="txt5 w3-opacity">page-count:150, ISBN no:938866611-9</h6>
+                    </div>
+                    <div class="w3-justify">
+                        <img src="img/Cover 1.jpg" alt="Chakwa" style="width:100%" class="w3-padding-16">
+                        <p>
+                            <strong>Short description:</strong> <br>
+                            This is my second collection of stories. It contain 14 stories. Interpreted the
+                            ritual,feestivals,celebration of village culture and how people live here. Their
+                            friendship has shed light on many feelings like
+                            enmity,poverty,justice,faith,superstitions,living,food,fear,happiness. If you read this
+                            book you will keep reading it because you will be stunned in it.
+                            <span id="dots3">...</span> <span id="more3">
+                                You will get hapiness and sarrow along with laughter,this is its novelty. The
+                                meaning of this title 'Giran' is the eclipse that the sun and moon feels.</span>
+                        </p>
+                        <p id="read3" onclick="read3()">Read more</p>
+                    </div>
+                </div>
+
+            </div><!-- end of left side di -->
+            <!-- right side info -->
+            <div class="w3-col2">
+                <!-- short About auhor -->
+                <div class="w3-card">
+                    <img src="img/author.jpg" alt="Baba" style="width:100%" class="w3-grayscale">
+                    <div class="card1">
+                        <h4>My Name</h4>
+                        <p>is Bharat Baliram Mane and i am from Pandharpur, currently i live in pune.I love writting
+                            i am
+                            freelance writter, i have written my own biography and also novel.My stories are based
+                            on
+                            rural areas</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Book authors -->
+                <div class="w3-card1" id="authors">
+                    <div class="w3-card1head">
+                        <h4>My Book Author Interest</h4>
+                    </div>
+                    <ul class="w3-ul">
+                        <li class="w3-ullist">
+                            <img src="img/AnnabhauSathe.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">Annabhau Sathe</span>
+                            <br>
+                            <span>A people's bard</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/bodhe.jpg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">V.B.Bodhe</span>
+                            <br>
+                            <span>Rural Stories</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/shankar-patil.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">Shankar Patil</span>
+                            <br>
+                            <span>Short-stories,Novels and Movie-scripts</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/baba-kadam.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">Baba kadam</span>
+                            <br>
+                            <span>Detective novelist</span>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- Fav Books -->
+                <div class="w3-card2" id="fav-books">
+
+                    <div class="w3-card2head">
+                        <h4>My Favourite Books</h4>
+                    </div>
+
+                    <div class="w3card2container">
+                        <div class="w3-card2col">
+                            <p><img src="img/gathod.jpeg" alt="Jeans" class="imgpadding" style="width:100%"></p>
+                            <p><img src="img/pajhar.jpeg" alt="Jeans" style="width:100%"></p>
+                        </div>
+                        <div class="w3-card2col">
+                            <p><img src="img/bandh-babhali.jpeg" alt="Men in Hats" class="imgpadding"
+                                    style="width:100%">
+                            </p>
+                            <p><img src="img/vatevarlya sawlya.jpeg" alt="Jeans" style="width:100%"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <!-- upcoming books same as authors-->
+                <div class="w3-card1" id="upcoming">
+                    <div class="w3-card1head">
+                        <h4>Upcoming Books</h4>
+                    </div>
+                    <ul class="w3-ul">
+                        <li class="w3-ullist">
+                            <img src="img/bandh-reshmache.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">He Bandh Reshmache</span>
+                            <br>
+                            <span class="up-book-des">Story that tells importance of relationship and education in
+                                society</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/khel-daiwacha.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">khel Daiwacha</span>
+                            <br>
+                            <span class="up-book-des">Where does the luck turn a man's life and hw does the days
+                                shown,this novel tells.</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/rang-mavaltiche.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">Rang Mavaltiche</span>
+                            <br>
+                            <span class="up-book-des">The problems of the old and the viewpoint of the youth is
+                                birth of old age homes that is my Rang mavaltiche</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/ghusmat.jpeg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">Ghusmat</span>
+                            <br>
+                            <span class="up-book-des">To know the result of the intercaste marrage and the problems
+                                of the family members,read my novel 'Ghusmat'</span>
+                        </li>
+                        <li class="w3-ullist">
+                            <img src="img/parkyache-dhan.jpg" alt="Image" class="imgcls" style="width:50px">
+                            <span class="w3-large">Parkyache Dhan</span>
+                            <br>
+                            <span class="up-book-des">Daughter is not our wealth but no father accepts it,my novel
+                                'Parkyache Dhan' is based on it.</span>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- subscribe section -->
+                <div class="sub">
+                    <div class="subhead">
+                        <h4>Subscribe</h4>
+                    </div>
+                    <div class="w3-subcontainer">
+                        <form action="first.php" method="post" class="formcontainer" onsubmit="return subscribe()">
+                            <p>Enter your e-mail below and get notified on the latest book posts.</p>
+                            <input id="inp" class="w3-input" type="text" placeholder="Enter e-mail" style="width:95%">
+                            <span id="errormsg"></span>
+                            <input type="submit" class="w3-subbutton" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- to open popup-form when click on subscribe button on image -->
+                <div class="w3-subcontainer form-popup" id="myform">
+                    <form action="" class="formcontainer" onsubmit="return subscribe()">
+                        <p>Enter your e-mail below and get notified on the latest book posts.</p>
+                        <p><input id="inp1" class="w3-input" type="text" placeholder="Enter e-mail" style="width:95%">
+                        </p>
+                        <span id="errormsg1"></span>
+                        <p><input type="submit" class="w3-subbutton" value="Subscribe"></p>
+                        <button onclick="addEventListener('click',() =>{
+                            document.getElementById('myform').style.display='none';
+                        } )" class="w3-subbutton">Close</button>
+
+                    </form>
+                </div>
+
+            </div>
+            <!--end of right side div -->
+        </div><!-- end of main -->
+
+    </div>
+    <footer id="foot" class="w3-foot">
+        <!-- # use to go to top of screen -->
+        <a href="#" class="w3-button">To the top</a>
+        <p>Here is link to my youtube channel <a href="https://www.youtube.com/channel/UCWILTIaYz6-M-lyuU85IX8A"
+                target="_blank">&nbsp;Click to see&nbsp;</a></p>
+    </footer>
+</body>
+<script>
+    //  for read more in 3 books
+    var k = 0;
+    function read1() {
+        if (!k) {
+            // remaining part of book description is in span with more1 id,in another span with dots1 id contain 3dots  
+            // and it toggle using k value if 0 then display span with more1 id,and hide dots using dots1 id
+            // and add read less text to span with read1 id
+            document.getElementById("more1").style.display = "inline";
+            document.getElementById("dots1").style.display = "none";
+            document.getElementById("read1").innerHTML = "Read Less";
+            k = 1;
+        }
+        else {
+            // if k value is 1 then hide more1 id and display dots1 id and set read1 to read more text
+            document.getElementById("more1").style.display = "none";
+            document.getElementById("dots1").style.display = "inline";
+            document.getElementById("read1").innerHTML = "Read More";
+            k = 0;
+        }
+    }
+    var n = 0;
+    function read2() {
+        if (!n) {
+            document.getElementById("more2").style.display = "inline";
+            document.getElementById("dots2").style.display = "none";
+            document.getElementById("read2").innerHTML = "Read Less";
+            n = 1;
+        }
+        else {
+            document.getElementById("more2").style.display = "none";
+            document.getElementById("dots2").style.display = "inline";
+            document.getElementById("read2").innerHTML = "Read More";
+            n = 0;
+        }
+    }
+    var m = 0;
+    function read3() {
+        if (!m) {
+            document.getElementById("more3").style.display = "inline";
+            document.getElementById("dots3").style.display = "none";
+            document.getElementById("read3").innerHTML = "Read Less";
+            m = 1;
+        }
+        else {
+            document.getElementById("more3").style.display = "none";
+            document.getElementById("dots3").style.display = "inline";
+            document.getElementById("read3").innerHTML = "Read More";
+            m = 0;
+        }
+    }
+    // to open form when click on subscribe button of header3 image
+    function openform() {
+        document.getElementById("myform").style.display = "block";
+    }
+    // subscribe validation of subscribe section and popup form
+    // here inp id for subscribe section and inp1 id for popup form
+    let input = document.getElementById("inp");
+    let input1 = document.getElementById("inp1");
+    let flag = 1;
+    function subscribe() {
+        if (input.value == "" && input1.value == "") {
+            document.getElementById("errormsg").innerHTML = "enter your email";
+            document.getElementById("errormsg1").innerHTML = "enter your email";
+            flag = 0;
+        }
+        else if (input.value.length < 5 && input1.value.length < 5) {
+            document.getElementById("errormsg").innerHTML = "enter valid email";
+            document.getElementById("errormsg1").innerHTML = "enter valid email";
+            flag = 0;
+        }
+        else {
+            document.getElementById("errormsg").innerHTML = "";  //to disapear the lable
+            document.getElementById("errormsg1").innerHTML = "";
+            flag = 1;
+        }
+        if (flag) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    // for responsive hamburger menu
+    const togglebutton = document.getElementsByClassName('toggle-button')[0];
+    const navbarlinks = document.getElementsByClassName('navbar-links')[0];
+    togglebutton.addEventListener('click', () => {   //here we use arrow function
+        navbarlinks.classList.toggle('active');  //here active class is toggle
+    })
+</script>
+
+</html>
