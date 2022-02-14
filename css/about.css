@@ -172,7 +172,7 @@ nav ul li a:hover{
     }
     nav ul li{
         text-align: center;
-        padding-top: 6px;
+        padding-top: 14px;
     }
     nav ul li ol{
         width: 100%;
@@ -185,7 +185,7 @@ nav ul li a:hover{
     }
     ul.active{
         display: flex;
-        height: 300px;
+        height: 370px;
     } 
 }
 /* for head main and nav */
