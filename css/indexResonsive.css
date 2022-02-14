@@ -1,7 +1,11 @@
   @media (max-width:1187px){
+    .logo {
+        padding-top: 40px;
+    }
     .toggle-button{
         display: flex;
         right: 50px; 
+        padding-top: 40px;
     }
     .navbar-links{
         display: none; 
@@ -10,6 +14,7 @@
     .navbar{
         flex-direction: column;
         align-items: flex-start;
+        height:130px;
     }  
     .navbar-links ul{
         flex-direction: column;
